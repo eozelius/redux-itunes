@@ -5,6 +5,7 @@ import {
   setFilter
 } from '../actions.js'
 import ItunesSearch from '../presentational/ItunesSearch'
+import ItunesListings from '../presentational/ItunesListings'
 
 class ItunesContainer extends Component {
   handleSearch = searchText => {
@@ -16,6 +17,7 @@ class ItunesContainer extends Component {
     return (
       <div className='itunes-container'>
         <ItunesSearch handleSearch={this.handleSearch} />
+        <ItunesListings listings={this.props.listings} />
       </div>
     )
   }
