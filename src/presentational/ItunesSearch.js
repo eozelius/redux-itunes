@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import style from '../styles/ItunesSearch.module.sass'
+import indexStyle from '../styles/index.module.sass'
 
 class ItunesSearch extends Component {
   constructor(props){
@@ -30,7 +31,7 @@ class ItunesSearch extends Component {
           <div className='control-group'>
             <label>Search Itunes</label>
             <input type='text' onChange={this.handleChange} autoFocus />
-            <input type='submit' />
+            <input className={indexStyle.btn}  type='submit' />
           </div>
         </form>
       </div>

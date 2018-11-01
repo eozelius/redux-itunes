@@ -34,8 +34,6 @@ export function fetchItunes(search){
 
     return axios.get(`https://itunes.apple.com/search?term=${search}`)
       .then((response) => {
-        console.log(response)
-
         dispatch(setIsFetching(false))
         dispatch(setFilter())
         dispatch(setListings(response.data.results))

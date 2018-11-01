@@ -7,15 +7,7 @@ import {
 import ItunesSearch from '../presentational/ItunesSearch'
 import ItunesListings from '../presentational/ItunesListings'
 import PropTypes from 'prop-types'
-
-const style = {
-  width: '92%',
-  padding: '1% 2%',
-  margin: '2% auto',
-  border: '1px solid #ccc',
-  height: '100%',
-  minHeight: '500px'
-}
+import style from '../styles/ItunesContainer.module.sass'
 
 class ItunesContainer extends Component {
   handleSearch = searchText => {
@@ -25,7 +17,7 @@ class ItunesContainer extends Component {
 
   render(){
     return (
-      <div className='itunes-container' style={style} >
+      <div className={style.itunesContainer} >
         <ItunesSearch handleSearch={this.handleSearch} />
         <ItunesListings listings={this.props.listings} />
       </div>
