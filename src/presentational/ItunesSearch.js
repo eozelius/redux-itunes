@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import style from '../styles/ItunesSearch.module.sass'
 
 class ItunesSearch extends Component {
   constructor(props){
@@ -24,11 +25,11 @@ class ItunesSearch extends Component {
 
   render(){
     return(
-      <div className='itunes-search-wrapper'>
+      <div className={style.itunesSearch} >
         <form className='control-form' onSubmit={this.handleSubmit}>
           <div className='control-group'>
             <label>Search Itunes</label>
-            <input type='text' onChange={this.handleChange} />
+            <input type='text' onChange={this.handleChange} autoFocus />
             <input type='submit' />
           </div>
         </form>
