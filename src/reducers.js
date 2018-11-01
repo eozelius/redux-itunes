@@ -4,13 +4,15 @@ import { combineReducers } from 'redux'
 const initialState = {
   isFetching: false,
   filter: null,
-  listings: []
+  listings: [{asdf: 'asdf'}]
 }
 
 const itunesReducer = function(state = initialState, action){
   switch(action.type){
     default:
-      return state
+      return {
+        state
+      }
   }
 }
 

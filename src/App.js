@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import { Provider } from 'react-redux'
 import configureStore from './configureStore'
+import ItunesContainer from './containers/ItunesContainer'
 
 class App extends Component {
   render() {
@@ -9,7 +10,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          hello
+          <ItunesContainer />
         </div>
       </Provider>
     );
