@@ -16,7 +16,7 @@ export function setListings(listings){
 export function setFilter(filter){
   return {
     type: SET_FILTER,
-    listings: filter
+    filter: filter
   }
 }
 
@@ -34,7 +34,6 @@ export function fetchItunes(search){
 
     return axios.get(`https://itunes.apple.com/search?term=${search}`)
       .then((response) => {
-        console.log('async success: ')
         console.log(response)
 
         dispatch(setIsFetching(false))
@@ -42,8 +41,7 @@ export function fetchItunes(search){
         dispatch(setListings(response.data.results))
       })
       .catch((error) => {
-        console.log("itunes fetch failed.")
-        console.log(error)
+        console.log("Error, fetching Itunes API failed error: " + error)
         dispatch(setIsFetching(false))
       })
   }
