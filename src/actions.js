@@ -32,7 +32,7 @@ export function fetchItunes(search){
   return function(dispatch){
     dispatch(setIsFetching(true))
 
-    return axios.get(`https://itunes.apple.com/search?term=${text}`)
+    return axios.get(`https://itunes.apple.com/search?term=${search}`)
       .then((response) => {
         console.log('async success: ')
         console.log(response)
