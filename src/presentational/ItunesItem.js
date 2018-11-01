@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import ItuneItemStyle from '../styles/ItunesItem.module.sass'
 
 const ItunesItem = props => {
-
   return (
     <div className={`${ItuneItemStyle.itunesItem}`} >
       <h2>{props.data.artistName}</h2>
