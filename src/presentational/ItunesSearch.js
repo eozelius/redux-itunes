@@ -12,8 +12,6 @@ class ItunesSearch extends Component {
 
   handleChange = (e) => {
     e.preventDefault()
-    if(e.target.value === ''){ return }
-
     this.setState({
       search: e.target.value
     })
