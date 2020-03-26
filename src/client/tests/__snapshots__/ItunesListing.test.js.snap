@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItunesListings it renders properly 1`] = `
+<div
+  className="wrapper"
+>
+  <label
+    className="loading"
+  >
+    Search for an artist or song...
+  </label>
+</div>
+`;

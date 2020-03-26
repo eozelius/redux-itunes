@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItunesSearch it renders properly 1`] = `
+<div
+  className="itunesSearch"
+>
+  <form
+    className="control-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="control-group"
+    >
+      <label>
+        Search Itunes
+      </label>
+      <input
+        autoFocus={true}
+        onChange={[Function]}
+        type="text"
+      />
+      <input
+        className="btn"
+        type="submit"
+      />
+    </div>
+  </form>
+</div>
+`;

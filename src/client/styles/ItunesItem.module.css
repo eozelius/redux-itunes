@@ -1,0 +1,8 @@
+.itunesItem {
+  width: 85%;
+  border: 1px solid blue;
+  height: auto;
+  margin: 3% auto;
+  padding: 3%;
+  align-self: center;
+}

@@ -1,23 +1,19 @@
-import React, { Component } from 'react';
-import './app.css';
-import ReactImage from './react.png';
+import React, { Component } from 'react'
+import { Provider } from 'react-redux'
+import configureStore from './configureStore'
+import ItunesContainer from './containers/ItunesContainer'
 
-export default class App extends Component {
-  state = { username: null };
-
-  componentDidMount() {
-    fetch('/api/getUsername')
-      .then(res => res.json())
-      .then(user => this.setState({ username: user.username }));
-  }
-
+class App extends Component {
   render() {
-    const { username } = this.state;
+    const store = configureStore()
     return (
-      <div>
-        {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-        <img src={ReactImage} alt="react" />
-      </div>
+      <Provider store={store}>
+        <div className="App">
+          <ItunesContainer />
+        </div>
+      </Provider>
     );
   }
 }
+
+export default App

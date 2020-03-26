@@ -1,0 +1,17 @@
+.itunesSearch {
+  width: 25%;
+  margin: 2% auto;
+  padding: 2% 1%;
+  height: 100px;
+  border: 1px solid #eee;
+}
+
+.itunesSearch label {
+  display: block;
+  text-align: center;
+}
+
+.itunesSearch input {
+  display: block;
+  margin: 3% auto;
+}

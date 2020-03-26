@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItunesContainer it renders properly 1`] = `
+<div
+  className="itunesContainer"
+>
+  <ItunesSearch
+    handleSearch={[Function]}
+  />
+  <ItunesListings
+    listings={Array []}
+  />
+</div>
+`;

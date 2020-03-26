@@ -1,9 +1,12 @@
-# simple-react-full-stack
+# Ethan Ozelius React Redux Itunes
 
-[![Build Status](https://travis-ci.org/crsandeep/simple-react-full-stack.svg?branch=master)](https://travis-ci.org/crsandeep/simple-react-full-stack)
-[![Greenkeeper badge](https://badges.greenkeeper.io/crsandeep/simple-react-full-stack.svg)](https://greenkeeper.io/)
+## Itunes API
+Search Itunes API by artist, album, track... anything really and you will be presented with a list of results
 
-This is a boilerplate to build a full stack web application using React, Node.js, Express and Webpack. It is also configured with webpack-dev-server, eslint, prettier and babel.
+## Random Artists onLoad
+When the page first loads before you have seached anything, the top 5 ablums from the following artists will be rendered.
+
+This projecte was boilerplated with `simple-react-full-stack` to build a full stack web application using React, Node.js, Express and Webpack. It is also configured with webpack-dev-server, eslint, prettier and babel.
 
 - [simple-react-full-stack](#simple-react-full-stack)
   - [Introduction](#introduction)

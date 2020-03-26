@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItunesItem it receives listing via props 1`] = `
+<ItunesItem
+  data={
+    Object {
+      "artistName": "asdf",
+      "artworkUrl100": "image",
+      "collectionName": "collection",
+      "trackName": "trackName",
+    }
+  }
+>
+  <div
+    className="itunesItem"
+  >
+    <h2>
+      asdf
+    </h2>
+    <label>
+      collection
+    </label>
+     
+    <br />
+    <img
+      alt="album artwork"
+      src="image"
+    />
+    <p>
+      trackName
+    </p>
+  </div>
+</ItunesItem>
+`;
+
+exports[`ItunesItem renders properly 1`] = `
+<div
+  className="itunesItem"
+>
+  <h2 />
+  <label />
+   
+  <br />
+  <img
+    alt="album artwork"
+  />
+  <p />
+</div>
+`;
