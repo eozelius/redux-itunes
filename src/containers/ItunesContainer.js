@@ -2,14 +2,26 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import {
   fetchItunes,
+  fetchRandomItunes,
   setFilter
 } from '../actions.js'
 import ItunesSearch from '../presentational/ItunesSearch'
 import ItunesListings from '../presentational/ItunesListings'
 import PropTypes from 'prop-types'
-import style from '../styles/ItunesContainer.module.sass'
+import style from '../styles/ItunesContainer.module.css'
 
-class ItunesContainer extends Component {
+export class ItunesContainer extends Component {
+  componentWillMount(nextProps, nextState){
+    console.log('nextProps: ')
+    console.log(nextProps)
+    console.log('nextState: ')
+    console.log(nextState)
+  }
+
+  componentDidMount(){
+    this.props.fetchRandomItunes()
+  }
+
   handleSearch = searchText => {
     if(searchText === ''){ return }
     this.props.fetchItunes(searchText)
@@ -36,7 +48,8 @@ function mapStateToProps(state){
 function mapDispatchToProps(dispatch){
   return {
     setFilter: filter => dispatch(setFilter(filter)),
-    fetchItunes: searchText => dispatch(fetchItunes(searchText))
+    fetchItunes: searchText => dispatch(fetchItunes(searchText)),
+    fetchRandomItunes: () => dispatch(fetchRandomItunes())
   }
 }
 

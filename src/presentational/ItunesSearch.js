@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import style from '../styles/ItunesSearch.module.sass'
-import indexStyle from '../styles/index.module.sass'
+import style from '../styles/ItunesSearch.module.css'
+import indexStyle from '../styles/index.module.css'
 
 class ItunesSearch extends Component {
   constructor(props){

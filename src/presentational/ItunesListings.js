@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ItunesItem from './ItunesItem'
-import style from '../styles/ItunesListings.module.sass'
+import style from '../styles/ItunesListings.module.css'
 
 class ItunesListings extends Component {
   render(){
